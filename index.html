@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta - setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
     <title>Tailwind - Projects</title>
+
+    <!-- FontAwesome - Link -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/sharp-solid.css" />
+
+    <!-- Font - Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind - Script -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+        .bebas-neue-font,
+        h1,h2,h3,h4,h5,h6 {
+            font-family: "Bebas Neue", sans-serif;
+        }
+
+        .roboto-font {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .yellow-text {
+            color: #FABE4C;
+        }
+
+        .black-text2 {
+            color: #363958;
+        }
+
+    </style>
+
 </head>
-<body>
+<body class="roboto-font">
+
+    <!-- header-area start here -->
+    <header class="header-area bg-[#FFFBF0]">
+        <div class="container mx-auto px-4 md:px-0 max-w-6xl sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-none xl:w-11/12 xl:px-14 2xl:px-0 2xl:w-auto 2xl:max-w-screen-xl">
+            <!-- header - nav start here -->
+            <nav class="flex justify-between items-center pt-10 pb-8">
+                <a href="#"><img class="w-48 sm:w-56 md:w-64" src="icons/header-logo.png" alt=""></a>
+                <div class="hidden md:block">
+                    <ul class="flex xl:gap-12 md:gap-6">
+                        <li><a class="text-base font-medium" href="#">Home</a></li>
+                        <li><a class="text-base font-medium" href="#">Product</a></li>
+                        <li><a class="text-base font-medium" href="#">About us</a></li>
+                        <li><a class="text-base font-medium" href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <button class="block md:hidden text-xl"><i class="fas fa-bars"></i></button>
+            </nav>
+            <!-- banner-area start here -->
+            <section class="banner-area">
+                <div class="sm:flex gap-10">
+                    <div class="w-full md:w-1/2 pt-0 sm:pt-6 md:pt-8 lg:pt-20 pb-16 md:pb-0">
+                        <h1 class="black-text2 text-[40px] md:text-[50px] lg:text-[80px] uppercase leading-tight"><span class="yellow-text">Be the Penguins</span> <br> of Winter</h1>
+                        <p class="black-text22 text-base">Lorem Ipsum is simply dummy text of the printing <br class="hidden lg:block"> and typesetting industry.</p>
+                        <button class="text-white font-medium font-base bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-4 px-8 rounded-lg mt-2"><i class="fa-solid fa-cart-shopping mr-2"></i> Bye now</button>
+                    </div>
+                    <div class="text-left">
+                        <img class="mx-auto md:mx-0" src="images/model.png" alt="image">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
 
     
     
