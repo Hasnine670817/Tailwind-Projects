@@ -27,28 +27,34 @@
             font-family: "Bebas Neue", sans-serif;
         }
 
-        .roboto-font {
-            font-family: "Roboto", sans-serif;
-        }
-
-        .yellow-text {
-            color: #FABE4C;
-        }
-
-        .black-text2 {
-            color: #363958;
-        }
-
     </style>
 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        yellow_text: '#FABE4C',
+                        black_text2: '#363958',
+                    },
+                    fontFamily: {
+                        bebas: ['Bebas Neue', 'sans-serif'],
+                        roboto: ['Roboto', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
 </head>
-<body class="roboto-font">
+<body class="font-roboto text-black_text2">
 
     <!-- header-area start here -->
     <header class="header-area bg-[#FFFBF0]">
         <div class="container mx-auto px-4 md:px-0 max-w-6xl sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-none xl:w-11/12 xl:px-14 2xl:px-0 2xl:w-auto 2xl:max-w-screen-xl">
             <!-- header - nav start here -->
-            <nav class="flex justify-between items-center pt-10 pb-8">
+            <nav class="flex justify-between items-center pt-10 pb-8 flex-row">
                 <a href="#"><img class="w-48 sm:w-56 md:w-64" src="icons/header-logo.png" alt=""></a>
                 <div class="hidden md:block">
                     <ul class="flex xl:gap-12 md:gap-6">
@@ -64,8 +70,8 @@
             <section class="banner-area">
                 <div class="sm:flex gap-10">
                     <div class="w-full md:w-1/2 pt-0 sm:pt-6 md:pt-8 lg:pt-20 pb-16 md:pb-0">
-                        <h1 class="black-text2 text-[40px] md:text-[50px] lg:text-[80px] uppercase leading-tight"><span class="yellow-text">Be the Penguins</span> <br> of Winter</h1>
-                        <p class="black-text22 text-base">Lorem Ipsum is simply dummy text of the printing <br class="hidden lg:block"> and typesetting industry.</p>
+                        <h1 class="text-black_text2 text-[40px] md:text-[50px] lg:text-[80px] uppercase leading-tight font-bebas"><span class="text-yellow_text">Be the Penguins</span> <br> of Winter</h1>
+                        <p class="text-black_text2 text-base roboto">Lorem Ipsum is simply dummy text of the printing <br class="hidden lg:block"> and typesetting industry.</p>
                         <button class="text-white font-medium font-base bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-4 px-8 rounded-lg mt-2"><i class="fa-solid fa-cart-shopping mr-2"></i> Bye now</button>
                     </div>
                     <div class="text-left">
@@ -75,6 +81,48 @@
             </section>
         </div>
     </header>
+
+    <!-- main-area start here -->
+    <main class="main-area">
+        <article>
+            <!-- jacket - Card - area -->
+            <section class="jacket-card-area pt-24 md:pt-24 lg:pt-44">
+                <div class="container mx-auto px-4 md:px-0 max-w-6xl sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-none xl:w-11/12 xl:px-14 2xl:px-0 2xl:w-auto 2xl:max-w-screen-xl">
+                    <h2 class="text-5xl mb-5">W0Man Jacket</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="max-w-[360px] mx-auto md:max-w-none md:mx-0 jacket-item [box-shadow:0px_10px_30px_0px_#0000000D] rounded-[20px] p-4 bg-white">
+                            <img src="images/jacket-11.png" alt="image">
+                            <h4 class="font-roboto text-2xl sm:text-xl font-bold text-black_text2 mt-4">Yellow Coat Jacket </h4>
+                            <p class="text-base sm:text-[14px] my-3">Lorem Ipsum is simply dummy text of the <br class="hidden md:block lg:hidden xl:block"> printing and typesetting industry.</p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-yellow_text font-black text-4xl sm:text-2xl">$234</p>
+                                <button class="text-white font-medium font-base bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-4 px-8 sm:py-3 sm:px-6 rounded-lg"><i class="fa-solid fa-cart-shopping mr-2"></i> Bye now</button>
+                            </div>
+                        </div>
+                        <div class="max-w-[360px] mx-auto md:max-w-none md:mx-0 jacket-item [box-shadow:0px_10px_30px_0px_#0000000D] rounded-[20px] p-4 bg-white">
+                            <img src="images/jacket-22.png" alt="image">
+                            <h4 class="font-roboto text-2xl sm:text-xl font-bold text-black_text2 mt-4">Ladies Jacket </h4>
+                            <p class="text-base sm:text-[14px] my-3">Lorem Ipsum is simply dummy text of the <br class="hidden md:block lg:hidden xl:block"> printing and typesetting industry.</p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-yellow_text font-black text-4xl sm:text-2xl">$234</p>
+                                <button class="text-white font-medium font-base bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-4 px-8 sm:py-3 sm:px-6 rounded-lg"><i class="fa-solid fa-cart-shopping mr-2"></i> Bye now</button>
+                            </div>
+                        </div>
+                        <div class="max-w-[360px] mx-auto md:max-w-none md:mx-0 jacket-item [box-shadow:0px_10px_30px_0px_#0000000D] rounded-[20px] p-4 bg-white">
+                            <img src="images/jacket-33.png" alt="image">
+                            <h4 class="font-roboto text-2xl sm:text-xl font-bold text-black_text2 mt-4">Woman Leather Jacket </h4>
+                            <p class="text-base sm:text-[14px] my-3">Lorem Ipsum is simply dummy text of the <br class="hidden md:block lg:hidden xl:block"> printing and typesetting industry.</p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-yellow_text font-black text-4xl sm:text-2xl">$234</p>
+                                <button class="text-white font-medium font-base bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-4 px-8 sm:py-3 sm:px-6 rounded-lg"><i class="fa-solid fa-cart-shopping mr-2"></i> Bye now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </article>
+    </main>
 
     
     
